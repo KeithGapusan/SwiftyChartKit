@@ -12,7 +12,11 @@ import SwiftUI
 @available(iOS 13.0, *)
 public struct ChartView: View {
     
-    @Binding public private(set) var barChartEntry : BarChartEntry
+    @Binding var barChartEntry : BarChartEntry
+    public init(barChartEntry: Binding<BarChartEntry>){
+        _barChartEntry = barChartEntry
+    }
+    
     
     public var body: some View {
         GeometryReader{ proxy in
