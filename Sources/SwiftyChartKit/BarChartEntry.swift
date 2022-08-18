@@ -7,7 +7,7 @@
 
 import Foundation
 
-@available(iOS 13.0, *)
+@available(iOS 14.0, *)
 public struct BarChartEntry{
     public  let maxYValue: Double
     public let minYValue: Double
