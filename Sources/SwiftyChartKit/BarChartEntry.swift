@@ -45,7 +45,7 @@ public struct BarChartEntry{
         return self.dataSet.max{$0.value < $1.value}?.value ?? 0.0
     }
     func getListOfYIndicator() -> [Double]{
-        let max = searchHighestValueOntheDataSet() + 10
+        let max = searchHighestValueOntheDataSet()// + 10 For deprecation
         let midYValue = max / 2
         let halfYmidValue = midYValue / 2
         return [max, (midYValue + halfYmidValue), midYValue , halfYmidValue, 0]
