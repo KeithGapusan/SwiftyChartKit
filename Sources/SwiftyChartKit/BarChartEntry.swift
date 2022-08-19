@@ -29,7 +29,7 @@ public struct BarChartEntry{
     
     func getBarHeight(containerHeight : Double, index : Int) -> Double{
         let containerHeightWithoutFontSize = containerHeight - 50 - 10 - 2//(padding = 40 , spacing = 2)
-        let max = searchHighestValueOntheDataSet() + 10
+        let max = searchHighestValueOntheDataSet()// + 10 Adjustment if needed for the Vertical position
         //maxYValue > searchHighestValueOntheDataSet() ? maxYValue : searchHighestValueOntheDataSet()
         let referenceMultiplier = containerHeightWithoutFontSize / max
         let value = dataSet[index].value
