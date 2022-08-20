@@ -89,7 +89,7 @@ public struct ChartView: View {
                                     }else{
                                         
                                         Text("\(data.title)")
-                                            .font(.system(size: barChartEntry.dataSet.count > 7 ? 7 : 10, weight: .regular))
+                                            .font(.system(size: barChartEntry.dataSet.count > 7 ? 7 : 8, weight: .regular))
                                             .multilineTextAlignment(.center)
                                             .frame(height: 50)
                                             .lineLimit(3)
@@ -112,7 +112,7 @@ public struct ChartView: View {
                                             if index == (barChartEntry.dataSet.count - 1){
                                                 VStack{
                                                     Text("\(data.title)")
-                                                        .font(.system(size: barChartEntry.dataSet.count > 6 ? 7 : 10, weight: .regular))
+                                                        .font(.system(size: barChartEntry.dataSet.count > 6 ? 7 : 8, weight: .regular))
                                                         .lineLimit(3)
                                                         .frame(maxWidth: .infinity, alignment: .topTrailing)
                                                         .multilineTextAlignment(.trailing)
@@ -121,7 +121,7 @@ public struct ChartView: View {
                                                 }
                                             }else if index == 0{
                                                 Text("\(data.title)")
-                                                    .font(.system(size: barChartEntry.dataSet.count > 6 ? 7 : 10, weight: .regular))
+                                                    .font(.system(size: barChartEntry.dataSet.count > 6 ? 7 : 8, weight: .regular))
                                                     .frame(maxWidth: .infinity, alignment: .topLeading)
                                                     .lineLimit(3)
                                                     .multilineTextAlignment(.leading)
@@ -130,7 +130,7 @@ public struct ChartView: View {
                                             }else{
                                                 if index % 3 == 0{
                                                     Text("\(data.title)")
-                                                        .font(.system(size: barChartEntry.dataSet.count > 6 ? 7 : 10, weight: .regular))
+                                                        .font(.system(size: barChartEntry.dataSet.count > 6 ? 7 : 8, weight: .regular))
                                                         .frame(maxWidth: .infinity)
                                                         .lineLimit(3)
                                                         .multilineTextAlignment(.leading)
@@ -143,7 +143,7 @@ public struct ChartView: View {
                                         }else{
 
                                             Text("\(data.title)")
-                                                .font(.system(size: barChartEntry.dataSet.count > 7 ? 7 : 10, weight: .regular))
+                                                .font(.system(size: barChartEntry.dataSet.count > 7 ? 7 : 8, weight: .regular))
                                                 .frame(maxWidth: .infinity)
                                                 .frame(height: 50)
                                                 .lineLimit(3)
